@@ -27,11 +27,11 @@ enron_data = pickle.load(open("../final_project/final_project_dataset.pkl", "r")
 # for each person, 21 features are available
 
 for keys, values in enron_data.items():
-	if values["poi"] == 1:
+	if values["salary"] == 10529459:
 		print(keys)
 
 # -> 18 (18 POIs are in the dataset, but 35 POIs were in total)
-
+'''
 print(enron_data["PRENTICE JAMES"]["total_stock_value"]) # -> 1095040
 print(enron_data["COLWELL WESLEY"]["from_this_person_to_poi"]) # -> 11
 print(enron_data['SKILLING JEFFREY K']['exercised_stock_options']) # -> 19250000
@@ -47,4 +47,4 @@ for keys, values in enron_data.items():
     if values["salary"] != "NaN":
         num += 1
 print(num) # -> 98
-
+'''
